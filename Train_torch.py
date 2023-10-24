@@ -65,7 +65,7 @@ def main():
             image = np.squeeze(image)
             #cv2.imshow("rerr", image)
             plt.imshow(image)
-            plt.savefig("figures/rerr.png")
+            plt.savefig("/content/BTP/figures/rerr.png")
             #plt.savefig("rerr.png")
             plt.show()
             cv2.waitKey(1)
@@ -79,7 +79,7 @@ def main():
                 #cv2.imshow("temp", image)
                 plt.imshow(image)
                 #plt.savefig("temp.png")
-                plt.savefig("figures/temp.png")
+                plt.savefig("/content/BTP/figures/temp.png")
                 plt.show()
                 cv2.waitKey(1)
             
