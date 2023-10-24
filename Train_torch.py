@@ -65,6 +65,7 @@ def main():
             image = np.squeeze(image)
             #cv2.imshow("rerr", image)
             plt.imshow(image)
+            plt.switch_backend()
             plt.savefig("rerr.png")
             fig_width = 6  # Width of the figure in inches
             fig_height = 6  # Height of the figure in inches
