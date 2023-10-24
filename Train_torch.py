@@ -81,7 +81,7 @@ def main():
             #     # cv2.imwrite('./test_img/'+'ori%2d' % (t+c)+'.jpg', current_state.image[20].transpose(1, 2, 0) * 255)
                 image = np.asanyarray(current_state.image[10].transpose(1, 2, 0) * 255, dtype=np.uint8)
                 image = np.squeeze(image)
-                #cv2.imshow("temp", image)
+                cv2.imshow("temp", image)
                 plt.imshow(image)
                 plt.savefig("temp.png")
                 fig_width = 8  # Width of the figure in inches
