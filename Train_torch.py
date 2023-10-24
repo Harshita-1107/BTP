@@ -63,7 +63,7 @@ def main():
         if n_epi % 10 == 0:
             image = np.asanyarray(label[10].transpose(1, 2, 0) * 255, dtype=np.uint8)
             image = np.squeeze(image)
-            #cv2.imshow("rerr", image)
+            cv2.imshow("rerr", image)
             plt.imshow(image)
             plt.savefig("rerr.png")
             plt.show()
