@@ -65,8 +65,9 @@ def main():
             image = np.squeeze(image)
             #cv2.imshow("rerr", image)
             plt.imshow(image)
+            plt.savefig("rerr.png")
             plt.show()
-            image("rerr.png") 
+
             cv2.waitKey(1)
         
         for t in range(EPISODE_LEN):
@@ -77,8 +78,8 @@ def main():
                 image = np.squeeze(image)
                 #cv2.imshow("temp", image)
                 plt.imshow(image)
+                plt.savefig("temp.png")
                 plt.show()
-                image("temp.png")
                 cv2.waitKey(1)
             
             previous_image = np.clip(current_state.image.copy(), a_min=0., a_max=1.)
