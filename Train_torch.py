@@ -65,7 +65,7 @@ def main():
             image = np.squeeze(image)
             #cv2.imshow("rerr", image)
             plt.imshow(image)
-            plt.savefig("rerr.png")
+            #plt.savefig("rerr.png")
             plt.show()
             cv2.waitKey(1)
         
@@ -77,7 +77,7 @@ def main():
                 image = np.squeeze(image)
                 #cv2.imshow("temp", image)
                 plt.imshow(image)
-                plt.savefig("temp.png")
+                #plt.savefig("temp.png")
                 plt.show()
                 cv2.waitKey(1)
             
@@ -108,12 +108,12 @@ def main():
 
 def paint_amap(acmap):
     image = np.asanyarray(acmap.squeeze(), dtype=np.uint8)
-    print(image)
+    #print(image)
     plt.imshow(image, vmin=1, vmax=9)
     plt.colorbar()
     plt.pause(1)
     
-    plt.show()
-    #plt.close()
+    #plt.show()
+    plt.close()
 if __name__ == '__main__':
     main()
