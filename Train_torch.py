@@ -66,6 +66,11 @@ def main():
             #cv2.imshow("rerr", image)
             plt.imshow(image)
             plt.savefig("rerr.png")
+            fig_width = 8  # Width of the figure in inches
+            fig_height = 6  # Height of the figure in inches
+
+            # Create a new figure with the specified size
+            plt.figure(figsize=(fig_width, fig_height))
             plt.show()
 
             cv2.waitKey(1)
@@ -79,6 +84,11 @@ def main():
                 #cv2.imshow("temp", image)
                 plt.imshow(image)
                 plt.savefig("temp.png")
+                fig_width = 8  # Width of the figure in inches
+                fig_height = 6  # Height of the figure in inches
+    
+                # Create a new figure with the specified size
+                plt.figure(figsize=(fig_width, fig_height))
                 plt.show()
                 cv2.waitKey(1)
             
