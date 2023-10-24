@@ -108,12 +108,12 @@ def main():
 
 def paint_amap(acmap):
     image = np.asanyarray(acmap.squeeze(), dtype=np.uint8)
-    # print(image)
+    print(image)
     plt.imshow(image, vmin=1, vmax=9)
     plt.colorbar()
     plt.pause(1)
     
-    # plt.show()
-    plt.close()
+    plt.show()
+    #plt.close()
 if __name__ == '__main__':
     main()
