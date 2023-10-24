@@ -65,15 +65,8 @@ def main():
             image = np.squeeze(image)
             #cv2.imshow("rerr", image)
             plt.imshow(image)
-            plt.switch_backend()
             plt.savefig("rerr.png")
-            fig_width = 6  # Width of the figure in inches
-            fig_height = 6  # Height of the figure in inches
-
-            # Create a new figure with the specified size
-            plt.figure(figsize=(fig_width, fig_height))
             plt.show()
-
             cv2.waitKey(1)
         
         for t in range(EPISODE_LEN):
@@ -85,11 +78,6 @@ def main():
                 #cv2.imshow("temp", image)
                 plt.imshow(image)
                 plt.savefig("temp.png")
-                fig_width = 6  # Width of the figure in inches
-                fig_height = 6  # Height of the figure in inches
-    
-                # Create a new figure with the specified size
-                plt.figure(figsize=(fig_width, fig_height))
                 plt.show()
                 cv2.waitKey(1)
             
