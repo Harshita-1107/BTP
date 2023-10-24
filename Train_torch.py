@@ -65,7 +65,8 @@ def main():
             image = np.squeeze(image)
             #cv2.imshow("rerr", image)
             plt.imshow(image)
-            plt.show()Image("rerr.png") 
+            plt.show()
+            Image("rerr.png") 
             cv2.waitKey(1)
         
         for t in range(EPISODE_LEN):
