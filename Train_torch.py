@@ -13,6 +13,9 @@ import torch.optim as optim
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 torch.manual_seed(1)
 
+# Clear GPU memory
+torch.cuda.empty_cache()
+
 MOVE_RANGE = 3
 EPISODE_LEN = 5
 MAX_EPISODE = 100000
