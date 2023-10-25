@@ -128,7 +128,7 @@ class PixelWiseA3C_InnerState():
         self.t_start = self.t
 
     def act_and_train(self, state, reward):
-        statevar = torch.Tensor(state).cpu()
+        statevar = torch.Tensor(state).cuda()
         self.past_rewards[self.t - 1] = torch.Tensor(reward).cuda()
 
         if self.t - self.t_start == self.t_max:
