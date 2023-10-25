@@ -89,9 +89,9 @@ def main():
             if n_epi % 10 == 0:
                 print(action[10])
                 print(action_prob[10])
-                paint_amap(action_prob[10])
+                paint_amap(action[10])
 
-            current_state.step(action_prob, inner_state)
+            current_state.step(action, inner_state)
             reward = np.square(label - previous_image) * 255 - np.square(label - current_state.image) * 255
             sum_reward += np.mean(reward) * np.power(GAMMA, t)
         
